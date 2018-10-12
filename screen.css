@@ -1,0 +1,92 @@
+#content {
+    background-color: #c1c8E4;
+}  
+h1 {
+    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    /* 'Lucida Console',"helvetica Neuw",Helvetica,Arial,  sans-serif;*/
+    font-weight: normal;
+    color: #5680e9;
+    text-align: center;
+    font-size: xx-large;
+}
+h3 {
+    margin-left: 1%;
+    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    color: #5AB9EA;
+    text-align: left;
+    font-size: larger;
+    font-weight: normal;
+}
+h2 {
+    margin-left: 1%;
+    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    color: #5AB9EA;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: normal;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+p {
+    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    margin-left: 2%;
+    -webkit-text-stroke: 0.5    px black;
+    font-size: normal;
+    color:#8860D0;
+    hyphens: auto; 
+    font-size: medium;
+    line-height: 1.8;
+}
+
+#sysProg{
+    
+ 
+        display: inline;
+        align-self: center;
+        /*  margin-left: 15px;
+        margin-right: right;
+        */
+        max-width: 60%;
+        
+     /*
+        display: block;
+        max-width: 100%;
+     */   
+
+}
+#bioPicture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    
+ /*
+    display: block;
+    max-width: 100%;
+ */   
+}
+@media only screen and (min-width: 600px) {
+    #bioPicture {
+        max-width: 500px;
+    }
+    #sysProg {
+        max-width: 150px;
+    }
+}
+
+/*
+Layout Styles (usually ID selectors)
+*/
+
+/*
+Module Styles (usually class selectors)
+*/
+
+/*
+State Styles (usually class selectors)
+*/
