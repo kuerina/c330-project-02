@@ -2,12 +2,17 @@
     background-color: #c1c8E4;
 }  
 h1 {
+    text-align: center;
+    position: relative;
+    box-align: center;
+    border-style:solid; 
     font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
     /* 'Lucida Console',"helvetica Neuw",Helvetica,Arial,  sans-serif;*/
     font-weight: normal;
     color: #5680e9;
     text-align: center;
     font-size: xx-large;
+
 }
 h3 {
     margin-left: 1%;
@@ -58,6 +63,12 @@ p {
         max-width: 100%;
      */   
 
+}
+#SchoolLogo,#linuxLogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 35%;
 }
 #bioPicture{
     display: block;
