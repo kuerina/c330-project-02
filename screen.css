@@ -1,5 +1,16 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Begin site styles below */
+
+/* Base style elements */
 #content {
-    background-color: #c1c8E4;
+    background-color: rgb(160, 165, 187);
 }  
 h1 {
     text-align: center;
@@ -9,7 +20,7 @@ h1 {
     font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
     /* 'Lucida Console',"helvetica Neuw",Helvetica,Arial,  sans-serif;*/
     font-weight: normal;
-    color: #5680e9;
+    /*color: #5680e9;*/
     text-align: center;
     font-size: xx-large;
 
@@ -17,7 +28,7 @@ h1 {
 h3 {
     margin-left: 1%;
     font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-    color: #5AB9EA;
+    color: rgb(107, 134, 63);
     text-align: left;
     font-size: larger;
     font-weight: normal;
@@ -25,7 +36,7 @@ h3 {
 h2 {
     margin-left: 1%;
     font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-    color: #5AB9EA;
+    color: rgb(38, 40, 139);
     text-align: center;
     font-size: xx-large;
     font-weight: normal;
@@ -37,7 +48,7 @@ h2 {
     }
   }
 
-p {
+/*p {
     font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
     margin-left: 2%;
     -webkit-text-stroke: 0.5    px black;
@@ -46,24 +57,20 @@ p {
     hyphens: auto; 
     font-size: medium;
     line-height: 1.8;
+}*/
+body {
+    display: flex;
+}
+body section {
+    flex-grow: 1;
+    width: 8ch;
+}
+body section p{
+    width: 400px;
 }
 
-#sysProg{
-    
- 
-        display: inline;
-        align-self: center;
-        /*  margin-left: 15px;
-        margin-right: right;
-        */
-        max-width: 60%;
-        
-     /*
-        display: block;
-        max-width: 100%;
-     */   
 
-}
+
 #SchoolLogo,#linuxLogo{
     display: block;
     margin-left: auto;
@@ -80,6 +87,12 @@ p {
     display: block;
     max-width: 100%;
  */   
+}
+#header{
+background-color: #DAA520;
+border-radius: 2%;
+color: #000000;
+padding: 2%;
 }
 @media only screen and (min-width: 600px) {
     #bioPicture {
