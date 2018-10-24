@@ -10,19 +10,26 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Base style elements */
 #content {
-    background-color: rgb(160, 165, 187);
+    background-color: #686256;
 }  
 h1 {
     text-align: center;
     position: relative;
     box-align: center;
-    border-style:solid; 
+    border:double;
+    border-style: double;
+    border-color: antiquewhite;  
+    font-size: 2em;
+    line-height: 1em;
+    padding: 10px;
+    border:solid;
+
     font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
     /* 'Lucida Console',"helvetica Neuw",Helvetica,Arial,  sans-serif;*/
     font-weight: normal;
     /*color: #5680e9;*/
     text-align: center;
-    font-size: xx-large;
+    /*font-size: xx-large;*/
 
 }
 h3 {
@@ -30,7 +37,7 @@ h3 {
     font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
     color: rgb(107, 134, 63);
     text-align: left;
-    font-size: larger;
+    /*font-size: larger;*/
     font-weight: normal;
 }
 h2 {
@@ -38,16 +45,9 @@ h2 {
     font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
     color: rgb(38, 40, 139);
     text-align: center;
-    font-size: xx-large;
+    /*font-size: xx-large;*/
     font-weight: normal;
 }
-
-@keyframes blinker {
-    50% {
-      opacity: 0;
-    }
-  }
-
 /*p {
     font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
     margin-left: 2%;
@@ -58,27 +58,44 @@ h2 {
     font-size: medium;
     line-height: 1.8;
 }*/
+
 body {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
 }
 body section {
+    flex-direction: row;
+    background-color: #587e76;
     flex-grow: 1;
-    width: 8ch;
+    max-width: 500px;
+    padding: 10px;
+    border: solid;
+    border-color:#c1502e;
 }
-body section p{
-    width: 400px;
+section h2{
+    /*padding-block-start: 0.333em;*/
+    align-self: center;
+    font-size: 2.0em ;/* twice size 2/3 */
+    line-height: 1.0em; /*  1/3 */
 }
+p {
+    font-size: 1.0em; 
+    line-height: 1.333em;
+    /*padding-left: 1ch;
+    padding-right: 1ch;*/
 
-
+}
 
 #SchoolLogo,#linuxLogo{
-    display: block;
+    flex-grow: 1;
     margin-left: auto;
     margin-right: auto;
     max-width: 35%;
 }
 #bioPicture{
-    display: block;
+    flex-grow: 1;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
@@ -88,15 +105,9 @@ body section p{
     max-width: 100%;
  */   
 }
-#header{
-background-color: #DAA520;
-border-radius: 2%;
-color: #000000;
-padding: 2%;
-}
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
     #bioPicture {
-        max-width: 500px;
+        max-width: 530px;
     }
     #sysProg {
         max-width: 150px;
