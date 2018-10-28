@@ -9,65 +9,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Begin site styles below */
 
 /* Base style elements */
-#content {
-  background-color: #686256;
-}
-#resume {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 0.625em;
-  grid-auto-rows: minmax(6.25em, auto);
-}
-#biopic {
-  grid-column: 1;
-  grid-row: 1;
-  background-color: #587e76;
-  max-width: 29.563em;
-  padding: 0.625em;
-  border: solid;
-  border-color: #c1502e;
-  align-self: center;
-  align-items: center;
-}
-
-#bio {
-  grid-column: 1;
-  grid-row: 2;
-  background-color: #587e76;
-  max-width: 29.563em;
-  padding: 0.625em;
-  border: solid;
-  border-color: #c1502e;
-  align-self: center;
-}
-
-#studies {
-  grid-column: 1;
-  grid-row: 3;
-  background-color: #587e76;
-  max-width: 29.563em;
-  padding: 0.625em;
-  border: solid;
-  border-color: #c1502e;
-}
-#experience {
-  grid-column: 1;
-  grid-row: 4;
-  background-color: #587e76;
-  max-width: 29.563em;
-  padding: 0.625em;
-  border: solid;
-  border-color: #c1502e;
-}
-#skills {
-  grid-column: 1;
-  grid-row: 5;
-  background-color: #587e76;
-  max-width: 29.563em;
-  padding: 0.625em;
-  border: solid;
-  border-color: #c1502e;
-}
 h1 {
   text-align: center;
   position: relative;
@@ -102,14 +43,80 @@ p {
   font-size: 1em;
   line-height: 1.333em;
 }
-#school-logo, #linux-logo {
+#content {
+  background-color: #686256;
+}
+#resume {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 0.625em;
+  grid-auto-rows: minmax(6.25em, auto);
+}
+  #biopic {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #587e76;
+    max-width: 29.563em;
+    padding: 0.625em;
+    border: solid;
+    border-color: #c1502e;
+    align-self: center;
+    align-items: center;
+  }
+
+  #bio {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #587e76;
+    max-width: 29.563em;
+    padding: 0.625em;
+    border: solid;
+    border-color: #c1502e;
+    align-self: center;
+  }
+  #studies {
+    grid-column: 1;
+    grid-row: 3;
+    display: grid;
+    background-color: #587e76;
+    max-width: 29.563em;
+    padding: 0.625em;
+    border: solid;
+    border-color: #c1502e;
+  }
+  #experience {
+    grid-column: 1;
+    grid-row: 4;
+    background-color: #587e76;
+    max-width: 29.563em;
+    padding: 0.625em;
+    border: solid;
+    border-color: #c1502e;
+  }
+  #skills {
+    grid-column: 1;
+    grid-row: 5;
+    background-color: #587e76;
+    max-width: 29.563em;
+    padding: 0.625em;
+    border: solid;
+    border-color: #c1502e;
+  }
+
+ #linux-logo {
   flex-grow: 1;
   margin-left: auto;
   margin-right: auto;
   max-width: 35%;
+  align-self: center;
+}
+#school-logo {
+
+  max-width: 2%;
+  align-self: center;
 }
 #biopicture {
-  flex-grow: 1;
+  
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
