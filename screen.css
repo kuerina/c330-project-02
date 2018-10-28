@@ -43,7 +43,7 @@ p {
   font-size: 1em;
   line-height: 1.333em;
 }
-#content {
+#contenido {
   background-color: #686256;
 }
 #resume {
@@ -52,75 +52,127 @@ p {
   grid-gap: 0.625em;
   grid-auto-rows: minmax(6.25em, auto);
 }
-  #biopic {
-    grid-column: 1;
-    grid-row: 1;
-    background-color: #587e76;
-    max-width: 29.563em;
-    padding: 0.625em;
-    border: solid;
-    border-color: #c1502e;
-    align-self: center;
-    align-items: center;
-  }
+#biopic {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #587e76;
+  max-width: 29.563em;
+  padding: 0.625em;
+  border: solid;
+  border-color: #c1502e;
+  align-self: center;
+  align-items: center;
+}
+#bio {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: #587e76;
+  max-width: 29.563em;
+  padding: 0.625em;
+  border: solid;
+  border-color: #c1502e;
+  align-self: center;
+}
+#biopicture {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  align-self: center;
+}
+#studies {
+  background-color: #587e76;
+  border: solid;
+  border-color: #c1502e;
+  display: grid;
+  grid-column: 1;
+  grid-row: 3;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 0.625em;
+  grid-auto-rows: min-content;
+  max-width: 29.563em;
+  padding: 0.625em;
+}
+#studies h2{
+  grid-column: 1;
+  grid-row: 1/2;
 
-  #bio {
-    grid-column: 1;
-    grid-row: 2;
-    background-color: #587e76;
-    max-width: 29.563em;
-    padding: 0.625em;
-    border: solid;
-    border-color: #c1502e;
-    align-self: center;
-  }
-  #studies {
-    grid-column: 1;
-    grid-row: 3;
-    display: grid;
-    background-color: #587e76;
-    max-width: 29.563em;
-    padding: 0.625em;
-    border: solid;
-    border-color: #c1502e;
-  }
-  #experience {
-    grid-column: 1;
-    grid-row: 4;
-    background-color: #587e76;
-    max-width: 29.563em;
-    padding: 0.625em;
-    border: solid;
-    border-color: #c1502e;
-  }
-  #skills {
-    grid-column: 1;
-    grid-row: 5;
-    background-color: #587e76;
-    max-width: 29.563em;
-    padding: 0.625em;
-    border: solid;
-    border-color: #c1502e;
-  }
-
- #linux-logo {
+  align-content: center;
+  align-self: center;
+  align-items: center;
+}
+#school-logo {
+  max-width: 50%;
+  grid-column: 1;
+  margin-left: auto;
+  margin-right: auto;
+  grid-row: 2/3;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+}
+#study-list{
+  grid-column: 1;
+  grid-row: 3/4;
+  max-width: unset;
+  align-self: center;
+}
+ol li{
+  list-style-position: inside;
+  list-style-type: none;
+  padding: 0.333em;
+}
+ul{
+  display: grid;
+}
+ul li{
+  list-style-position: inside;
+  list-style-type: circle;
+  padding: 0.1em;
+}
+#experience {
+  grid-column: 1;
+  grid-row: 4;
+  background-color: #587e76;
+  max-width: 29.563em;
+  padding: 0.625em;
+  border: solid;
+  border-color: #c1502e;
+}
+#skills {
+  grid-column: 1;
+  grid-row: 5;
+  background-color: #587e76;
+  max-width: 29.563em;
+  padding: 0.625em;
+  border: solid;
+  border-color: #c1502e;
+}
+#linux-logo {
   flex-grow: 1;
   margin-left: auto;
   margin-right: auto;
   max-width: 35%;
   align-self: center;
 }
-#school-logo {
-
-  max-width: 2%;
-  align-self: center;
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
 }
-#biopicture {
-  
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  align-self: center;
+.active, .collapsible:hover {
+  background-color: #555;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
 }
 @media only screen and (min-width: 31.25em) {
   #biopicture {
