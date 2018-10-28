@@ -10,118 +10,169 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Base style elements */
 #content {
-    background-color: #686256;
-}  
-h1 {
-    text-align: center;
-    position: relative;
-    box-align: center;
-    border:double;
-    border-style: double;
-    border-color: antiquewhite;  
-    font-size: 2em;
-    line-height: 1em;
-    padding: 10px;
-    border:solid;
-
-    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-    /* 'Lucida Console',"helvetica Neuw",Helvetica,Arial,  sans-serif;*/
-    font-weight: normal;
-    /*color: #5680e9;*/
-    text-align: center;
-    /*font-size: xx-large;*/
-
+  background-color: #686256;
 }
+#resume {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 0.625em;
+  grid-auto-rows: minmax(6.25em, auto);
+}
+#biopic {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #587e76;
+  max-width: 29.563em;
+  padding: 0.625em;
+  border: solid;
+  border-color: #c1502e;
+  align-self: center;
+  align-items: center;
+}
+
+#bio {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: #587e76;
+  max-width: 29.563em;
+  padding: 0.625em;
+  border: solid;
+  border-color: #c1502e;
+  align-self: center;
+}
+
+#studies {
+  grid-column: 1;
+  grid-row: 3;
+  background-color: #587e76;
+  max-width: 29.563em;
+  padding: 0.625em;
+  border: solid;
+  border-color: #c1502e;
+}
+#experience {
+  grid-column: 1;
+  grid-row: 4;
+  background-color: #587e76;
+  max-width: 29.563em;
+  padding: 0.625em;
+  border: solid;
+  border-color: #c1502e;
+}
+#skills {
+  grid-column: 1;
+  grid-row: 5;
+  background-color: #587e76;
+  max-width: 29.563em;
+  padding: 0.625em;
+  border: solid;
+  border-color: #c1502e;
+}
+h1 {
+  text-align: center;
+  position: relative;
+  box-align: center;
+  border: double;
+  border-style: double;
+  border-color: antiquewhite;
+  font-size: 2em;
+  line-height: 1em;
+  padding: 0.625em;
+  font-family: Consolas, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+  font-weight: normal;
+};
 h3 {
-    margin-left: 1%;
-    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-    color: rgb(107, 134, 63);
-    text-align: left;
-    /*font-size: larger;*/
-    font-weight: normal;
+  margin-left: 1%;
+  font-family: Consolas, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+  color: rgb(107, 134, 63);
+  text-align: left;
+  font-weight: normal;
 }
 h2 {
-    margin-left: 1%;
-    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-    color: rgb(38, 40, 139);
-    text-align: center;
-    /*font-size: xx-large;*/
-    font-weight: normal;
-}
-/*p {
-    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-    margin-left: 2%;
-    -webkit-text-stroke: 0.5    px black;
-    font-size: normal;
-    color:#8860D0;
-    hyphens: auto; 
-    font-size: medium;
-    line-height: 1.8;
-}*/
-
-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 300px;
-}
-body section {
-    flex-direction: row;
-    background-color: #587e76;
-    flex-grow: 1;
-    max-width: 500px;
-    padding: 10px;
-    border: solid;
-    border-color:#c1502e;
-}
-section h2{
-    /*padding-block-start: 0.333em;*/
-    align-self: center;
-    font-size: 2.0em ;/* twice size 2/3 */
-    line-height: 1.0em; /*  1/3 */
+  margin-left: 1%;
+  font-family: Consolas, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+  color: rgb(38, 40, 139);
+  text-align: center;
+  font-weight: normal;
+  align-self: center;
+  font-size: 2em ;/* twice size 2/3 */
+  line-height: 1em;/*  1/3 */
 }
 p {
-    font-size: 1.0em; 
-    line-height: 1.333em;
-    /*padding-left: 1ch;
-    padding-right: 1ch;*/
-
+  font-size: 1em;
+  line-height: 1.333em;
 }
-
-#SchoolLogo,#linuxLogo{
-    flex-grow: 1;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 35%;
+#school-logo, #linux-logo {
+  flex-grow: 1;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 35%;
 }
-#bioPicture{
-    flex-grow: 1;
-    margin-left: auto;
-    margin-right: auto;
+#biopicture {
+  flex-grow: 1;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  align-self: center;
+}
+@media only screen and (min-width: 31.25em) {
+  #biopicture {
     max-width: 100%;
-    
- /*
-    display: block;
-    max-width: 100%;
- */   
+    align-self: center;
+  }
+  #resume {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.625em;
+    grid-auto-rows: minmax(20.2em,auto);
+  }
+  #biopic {
+    grid-column: 1/2;
+    grid-row: 1;
+    background-color: #587e76;
+    max-width: unset;
+    padding: 0.625em;
+    border: solid;
+    border-color: #c1502e;
+    align-self: center;
+  }
+  #bio {
+    grid-column: 2 / 3 ;
+    grid-row: 1;
+    background-color: #587e76;
+    max-width: unset;
+    min-height: 29.25em;
+    padding: 0.625em;
+    border: solid;
+    border-color: #c1502e;
+    align-self: center;
+  }
+  #studies {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    max-width: unset;
+    background-color: #587e76;
+    padding: 0.625em;
+    border: solid;
+    border-color: #c1502e;
+  }
+  #experience {
+    grid-column: 1/2;
+    grid-row: 3;
+    max-width: unset;
+    background-color: #587e76;
+    padding: 0.625em;
+    border: solid;
+    border-color: #c1502e;
+  }
+  #skills {
+    background-color: #587e76;
+    border: solid;
+    border-color: #c1502e;
+    grid-column: 2/3;
+    grid-row: 3;
+    max-width: unset;
+    padding: 0.625em;
+  }
 }
-@media only screen and (min-width: 500px) {
-    #bioPicture {
-        max-width: 530px;
-    }
-    #sysProg {
-        max-width: 150px;
-    }
-}
 
-/*
-Layout Styles (usually ID selectors)
-*/
-
-/*
-Module Styles (usually class selectors)
-*/
-
-/*
-State Styles (usually class selectors)
-*/
