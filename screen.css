@@ -21,12 +21,13 @@ h1 {
   padding: 0.625em;
   font-family: "New Century Schoolbook", "TeX Gyre Schola", serif;
   font-weight: normal;
-  color:#071D28;
+  color: #071D28;
   background-color: #b675619a;
 };
+
 h3 {
   margin-left: 1%;
-  font-family:"Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: rgb(107, 134, 63);
   text-align: left;
   font-weight: normal;
@@ -45,17 +46,17 @@ p {
   font-size: 1em;
   line-height: 1.333em;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
-  color:#201201;
+  color: #201201;
 }
 #contenido {
   background-color: #686256;
 }
 #resume {
-  padding-top: 0.625em;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 0.625em;
   grid-auto-rows: minmax(6.25em, auto);
+  padding-top: 0.625em;
 }
 #biopic {
   grid-column: 1;
@@ -97,7 +98,7 @@ p {
   max-width: 29.563em;
   padding: 0.625em;
 }
-#studies h2{
+#studies h2 {
   grid-column: 1;
   grid-row: 1/2;
   align-content: center;
@@ -111,28 +112,29 @@ p {
   margin-right: auto;
   grid-row: 2/3;
 }
-#study-list{
+#study-list {
   grid-column: 1;
   grid-row: 3/4;
   max-width: unset;
 }
-ol li{
+ol li {
   list-style-position: inside;
   list-style-type: none;
   line-height: 1.33em;
   font-size: 0.9em;
   column-count: 1;
 }
-footer li{
+footer li {
   color: antiquewhite;
   line-height: 1.33em;
 }
-ul li{
+ul li {
   width: 93%;
   list-style-position: inside;
   list-style-type: circle;
   padding: 0.1em;
   font-size: 1em;
+  color: #201201; 
   padding-left: 1.3em;
   padding-bottom: 0.5em;
 }
@@ -146,7 +148,7 @@ ul li{
   border: solid;
   border-color: #c1502e;
 }
-#experience h2{
+#experience h2 {
   grid-column: 1;
   grid-row: 1/2;
   align-content: center;
@@ -171,7 +173,7 @@ ul li{
   border: solid;
   border-color: #c1502e;
 }
-#skills h2{
+#skills h2 {
   grid-column: 1;
   grid-row: 1/2;
   align-content: center;
@@ -191,7 +193,7 @@ ul li{
   border: solid;
   border-color: #587e76d3;
   background-color: #587e76;
-  color: black;
+  color: #201201;
   width: 100%;
   text-align: left;
 }
@@ -210,20 +212,17 @@ ul li{
   #resume {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.625em;
     grid-auto-rows: minmax(6.25em, auto);
+  }
+  section{
+    border-color: #c1502e;
   }
   #biopic {
     grid-column: 1/4;
     grid-row: 1;
-    background-color: #587e76;
     display: grid;
     max-width: 100%;
     padding: 1.25em;
-    border: solid;
-    border-color: #c1502e;
-    align-self: center;
-    align-items: center;
   }
   #biopicture {
     margin-left: auto;
@@ -234,17 +233,11 @@ ul li{
   #bio {
     grid-column: 1/4;
     grid-row: 2;
-    background-color: #587e76;
     max-width: unset;
     padding: 0.625em;
-    border: solid;
-    border-color: #c1502e;
     align-self: center;
   }
   #studies {
-    background-color: #587e76;
-    border: solid;
-    border-color: #c1502e;
     display: grid;
     grid-column: 1/2;
     grid-row: 3;
@@ -254,7 +247,7 @@ ul li{
     max-width: 29.563em;
     padding: 0.625em;
   }
-  #studies h2{
+  #studies h2 {
     grid-column: 1;
     grid-row: 1/2;
     align-content: center;
@@ -268,22 +261,22 @@ ul li{
     margin-right: auto;
     grid-row: 2/3;
   }
-  #study-list{
+  #study-list {
     grid-column: 1;
     grid-row: 3/4;
     max-width: unset;
   }
-  ol li{
+  ol li {
     list-style-position: inside;
     list-style-type: none;
     line-height: 1.33em;
     column-count: 1;
   }
-  footer li{
+  footer li {
     color: antiquewhite;
     line-height: 1.33em;
   }
-  ul li{
+  ul li {
     width: 93%;
     list-style-position: inside;
     list-style-type: circle;
@@ -296,13 +289,10 @@ ul li{
     grid-column: 2/4;
     grid-row: 3;
     display: grid;
-    background-color: #587e76;
     max-width: unset;
     padding: 0.625em;
-    border: solid;
-    border-color: #c1502e;
   }
-  #experience h2{
+  #experience h2 {
     grid-column: 1;
     grid-row: 1/2;
     align-content: center;
@@ -321,13 +311,10 @@ ul li{
     grid-column: 1/4;
     grid-row: 4;
     display: grid;
-    background-color: #587e76;
     max-width: unset;
     padding: 0.625em;
-    border: solid;
-    border-color: #c1502e;
   }
-  #skills h2{
+  #skills h2 {
     grid-column: 1;
     grid-row: 1/2;
     align-content: center;
@@ -342,26 +329,6 @@ ul li{
     grid-row: 2/3;
     padding: 0.5em;
   }
-  .collapsible {
-    cursor: pointer;
-    border: solid;
-    border-color: #587e76d3;
-    background-color: #587e76;
-    color: black;
-    width: 100%;
-    text-align: left;
-  }
-  .active, .collapsible:hover {
-    background-color:#c1502e;
-  }
-  .content {
-    display: none;
-    overflow: hidden;
-  }
-  .button {
-    border: #c1502e;
-    background-color: #587e76;
-  }
 }
 @media only screen and (min-width: 58.375em) {
   #biopicture {
@@ -372,36 +339,29 @@ ul li{
   }
 }
 @media only screen and (min-width: 89.375em) {
-  h1{
+  h1 {
     font-size: 2.5em;
   }
   #resume {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.625em;
-    grid-auto-rows:  auto;
+    grid-auto-rows: auto;
   }
   #biopic {
     grid-column: 1/3;
     grid-row: 1/2;
-    background-color: #587e76;
     display: grid;
     max-width: 100%;
     padding: 1.25em;
-    border: solid;
-    border-color: #c1502e;
   }
   #bio {
     height: 43.375em;
     grid-column: 3/4;
     grid-row: 1 / 2;
-    background-color: #587e76;
     max-width: unset;
     padding: 1em;
     line-height: 1.5em;
     font-size: 1.2em;
-    border: solid;
-    border-color: #c1502e;
     align-self: center;
   }
   #biopicture {
@@ -412,9 +372,6 @@ ul li{
     align-self: center;
   }
   #studies {
-    background-color: #587e76;
-    border: solid;
-    border-color: #c1502e;
     display: grid;
     grid-column: 1/2;
     grid-row: 2;
@@ -424,7 +381,7 @@ ul li{
     max-width: unset;
     padding: 0.625em;
   }
-  #studies h2{
+  #studies h2 {
     grid-column: 1;
     grid-row: 1/2;
     align-content: center;
@@ -438,29 +395,10 @@ ul li{
     margin-right: auto;
     grid-row: 2/3;
   }
-  #study-list{
+  #study-list {
     grid-column: 1;
     grid-row: 3/4;
     max-width: unset;
-  }
-  ol li{
-    list-style-position: inside;
-    list-style-type: none;
-    line-height: 1.33em;
-    column-count: 1;
-  }
-  footer li{
-    color: antiquewhite;
-    line-height: 1.33em;
-  }
-  ul li{
-    width: 93%;
-    list-style-position: inside;
-    list-style-type: circle;
-    padding: 0.1em;
-    font-size: 1em;
-    padding-left: 1.3em;
-    padding-bottom: 0.5em;
   }
   #experience {
     grid-column: 2/4;
@@ -469,10 +407,8 @@ ul li{
     background-color: #587e76;
     max-width: unset;
     padding: 0.625em;
-    border: solid;
-    border-color: #c1502e;
   }
-  #experience h2{
+  #experience h2 {
     grid-column: 1;
     grid-row: 1/2;
     align-content: center;
@@ -491,13 +427,11 @@ ul li{
     grid-column: 1/4;
     grid-row: 3;
     display: grid;
-    background-color: #587e76;
     max-width: unset;
     padding: 0.625em;
-    border: solid;
-    border-color: #c1502e;
+
   }
-  #skills h2{
+  #skills h2 {
     grid-column: 1;
     grid-row: 1/2;
     align-content: center;
@@ -511,25 +445,5 @@ ul li{
     margin-right: auto;
     grid-row: 2/3;
     padding: 0.5em;
-  }
-  .collapsible {
-    cursor: pointer;
-    border: solid;
-    border-color: #587e76d3;
-    background-color: #587e76;
-    color: black;
-    width: 100%;
-    text-align: left;
-  }
-  .active, .collapsible:hover {
-    background-color:#c1502e;
-  }
-  .content {
-    display: none;
-    overflow: hidden;
-  }
-  .button {
-    border: #c1502e;
-    background-color: #587e76;
   }
 }
