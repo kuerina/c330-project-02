@@ -47,6 +47,7 @@ p {
   background-color: #686256;
 }
 #resume {
+  padding-top: 0.625em;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 0.625em;
@@ -95,99 +96,133 @@ p {
 #studies h2{
   grid-column: 1;
   grid-row: 1/2;
-
   align-content: center;
   align-self: center;
   align-items: center;
 }
 #school-logo {
-  max-width: 50%;
+  max-width: 40%;
   grid-column: 1;
   margin-left: auto;
   margin-right: auto;
   grid-row: 2/3;
-  align-content: center;
-  align-self: center;
-  align-items: center;
 }
 #study-list{
   grid-column: 1;
   grid-row: 3/4;
   max-width: unset;
-  align-self: center;
 }
 ol li{
   list-style-position: inside;
   list-style-type: none;
-  padding: 0.333em;
+  line-height: 1.33em;
+  column-count: 1;
 }
-ul{
-  display: grid;
+footer li{
+  color: antiquewhite;
+  line-height: 1.33em;
 }
 ul li{
+  width: 93%;
   list-style-position: inside;
   list-style-type: circle;
   padding: 0.1em;
+  font-size: 1em;
+  padding-left: 1.3em;
+  padding-bottom: 0.5em;
 }
 #experience {
   grid-column: 1;
   grid-row: 4;
+  display: grid;
   background-color: #587e76;
   max-width: 29.563em;
   padding: 0.625em;
   border: solid;
   border-color: #c1502e;
+}
+#experience h2{
+  grid-column: 1;
+  grid-row: 1/2;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+}
+#esperanza-logo {
+  max-width: 40%;
+  grid-column: 1;
+  margin-left: auto;
+  margin-right: auto;
+  grid-row: 2/3;
+  padding: 0.5em;
 }
 #skills {
   grid-column: 1;
   grid-row: 5;
+  display: grid;
   background-color: #587e76;
   max-width: 29.563em;
   padding: 0.625em;
   border: solid;
   border-color: #c1502e;
 }
+#skills h2{
+  grid-column: 1;
+  grid-row: 1/2;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+}
 #linux-logo {
-  flex-grow: 1;
+  max-width: 40%;
+  grid-column: 1;
   margin-left: auto;
   margin-right: auto;
-  max-width: 35%;
-  align-self: center;
+  grid-row: 2/3;
+  padding: 0.5em;
 }
 .collapsible {
-  background-color: #777;
-  color: white;
   cursor: pointer;
-  padding: 18px;
+  border: solid;
+  border-color: #587e76d3;
+  background-color: #587e76;
+  color: black;
   width: 100%;
-  border: none;
   text-align: left;
-  outline: none;
-  font-size: 15px;
 }
 .active, .collapsible:hover {
-  background-color: #555;
+  background-color:#c1502e;
 }
 .content {
-  padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+}
+.button {
+  border: #c1502e;
+  background-color: #587e76;
 }
 @media only screen and (min-width: 31.25em) {
-  #biopicture {
-    max-width: 100%;
-    align-self: center;
-  }
   #resume {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.625em;
-    grid-auto-rows: minmax(20.2em,auto);
+    grid-auto-rows: minmax(6.25em, auto);
   }
   #biopic {
-    grid-column: 1/2;
+    grid-column: 1/4;
     grid-row: 1;
+    background-color: #587e76;
+    display: grid;
+    max-width: 100%;
+    padding: 1.25em;
+    border: solid;
+    border-color: #c1502e;
+    align-self: center;
+    align-items: center;
+  }
+  #bio {
+    grid-column: 1/4;
+    grid-row: 2;
     background-color: #587e76;
     max-width: unset;
     padding: 0.625em;
@@ -195,43 +230,290 @@ ul li{
     border-color: #c1502e;
     align-self: center;
   }
-  #bio {
-    grid-column: 2 / 3 ;
-    grid-row: 1;
+  #biopicture {
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1;
+    max-width: 56.25em;;
+  }
+  #studies {
+    background-color: #587e76;
+    border: solid;
+    border-color: #c1502e;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 3;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.625em;
+    grid-auto-rows: min-content;
+    max-width: 29.563em;
+    padding: 0.625em;
+  }
+  #studies h2{
+    grid-column: 1;
+    grid-row: 1/2;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  #school-logo {
+    max-width: 45%;
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 2/3;
+  }
+  #study-list{
+    grid-column: 1;
+    grid-row: 3/4;
+    max-width: unset;
+  }
+  ol li{
+    list-style-position: inside;
+    list-style-type: none;
+    line-height: 1.33em;
+    column-count: 1;
+  }
+  footer li{
+    color: antiquewhite;
+    line-height: 1.33em;
+  }
+  ul li{
+    width: 93%;
+    list-style-position: inside;
+    list-style-type: circle;
+    padding: 0.1em;
+    font-size: 1em;
+    padding-left: 1.3em;
+    padding-bottom: 0.5em;
+  }
+  #experience {
+    grid-column: 2/4;
+    grid-row: 3;
+    display: grid;
     background-color: #587e76;
     max-width: unset;
-    min-height: 29.25em;
     padding: 0.625em;
     border: solid;
     border-color: #c1502e;
+  }
+  #experience h2{
+    grid-column: 1;
+    grid-row: 1/2;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  #esperanza-logo {
+    max-width: 22%;
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 2/3;
+    padding: 0.5em;
+  }
+  #skills {
+    grid-column: 1/4;
+    grid-row: 4;
+    display: grid;
+    background-color: #587e76;
+    max-width: unset;
+    padding: 0.625em;
+    border: solid;
+    border-color: #c1502e;
+  }
+  #skills h2{
+    grid-column: 1;
+    grid-row: 1/2;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  #linux-logo {
+    max-width: 40%;
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 2/3;
+    padding: 0.5em;
+  }
+  .collapsible {
+    cursor: pointer;
+    border: solid;
+    border-color: #587e76d3;
+    background-color: #587e76;
+    color: black;
+    width: 100%;
+    text-align: left;
+  }
+  .active, .collapsible:hover {
+    background-color:#c1502e;
+  }
+  .content {
+    display: none;
+    overflow: hidden;
+  }
+  .button {
+    border: #c1502e;
+    background-color: #587e76;
+  }
+}
+@media only screen and (min-width: 89.375em) {
+  #resume {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.625em;
+    grid-auto-rows:  auto;
+  }
+  #biopic {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: #587e76;
+    display: grid;
+    max-width: 100%;
+    padding: 1.25em;
+    border: solid;
+    border-color: #c1502e;
+  }
+  #bio {
+    height: 43.375em;
+    grid-column: 3/4;
+    grid-row: 1 / 2;
+    background-color: #587e76;
+    max-width: unset;
+    padding: 1em;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    border: solid;
+    border-color: #c1502e;
+    align-self: center;
+  }
+  #biopicture {
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1;
+    max-width: 56.25em;
     align-self: center;
   }
   #studies {
-    grid-column: 1 / 3;
-    grid-row: 2;
-    max-width: unset;
     background-color: #587e76;
-    padding: 0.625em;
     border: solid;
     border-color: #c1502e;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.625em;
+    grid-auto-rows: min-content;
+    max-width: unset;
+    padding: 0.625em;
+  }
+  #studies h2{
+    grid-column: 1;
+    grid-row: 1/2;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  #school-logo {
+    max-width: 45%;
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 2/3;
+  }
+  #study-list{
+    grid-column: 1;
+    grid-row: 3/4;
+    max-width: unset;
+  }
+  ol li{
+    list-style-position: inside;
+    list-style-type: none;
+    line-height: 1.33em;
+    column-count: 1;
+  }
+  footer li{
+    color: antiquewhite;
+    line-height: 1.33em;
+  }
+  ul li{
+    width: 93%;
+    list-style-position: inside;
+    list-style-type: circle;
+    padding: 0.1em;
+    font-size: 1em;
+    padding-left: 1.3em;
+    padding-bottom: 0.5em;
   }
   #experience {
-    grid-column: 1/2;
-    grid-row: 3;
-    max-width: unset;
+    grid-column: 2/4;
+    grid-row: 2;
+    display: grid;
     background-color: #587e76;
+    max-width: unset;
     padding: 0.625em;
     border: solid;
     border-color: #c1502e;
+  }
+  #experience h2{
+    grid-column: 1;
+    grid-row: 1/2;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  #esperanza-logo {
+    max-width: 22%;
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 2/3;
+    padding: 0.5em;
   }
   #skills {
-    background-color: #587e76;
-    border: solid;
-    border-color: #c1502e;
-    grid-column: 2/3;
+    grid-column: 1/4;
     grid-row: 3;
+    display: grid;
+    background-color: #587e76;
     max-width: unset;
     padding: 0.625em;
+    border: solid;
+    border-color: #c1502e;
+  }
+  #skills h2{
+    grid-column: 1;
+    grid-row: 1/2;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  #linux-logo {
+    max-width: 40%;
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 2/3;
+    padding: 0.5em;
+  }
+  .collapsible {
+    cursor: pointer;
+    border: solid;
+    border-color: #587e76d3;
+    background-color: #587e76;
+    color: black;
+    width: 100%;
+    text-align: left;
+  }
+  .active, .collapsible:hover {
+    background-color:#c1502e;
+  }
+  .content {
+    display: none;
+    overflow: hidden;
+  }
+  .button {
+    border: #c1502e;
+    background-color: #587e76;
   }
 }
-
